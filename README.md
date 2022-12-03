@@ -1,1 +1,3 @@
-# AdventOfCode_2022
+# AdventOfCode2022
+
+Advent of code 2022 files
