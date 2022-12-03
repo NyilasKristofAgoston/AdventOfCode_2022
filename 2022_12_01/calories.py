@@ -1,4 +1,6 @@
-f = open("C:\input.txt", 'r')
+import os
+
+f = open((os.path.dirname(__file__)+"\input.txt"), "r")
 
 index = 0
 
@@ -15,5 +17,3 @@ for i in f:
         szamlalo += int(i)
 
 print(max(osszegLista))
-
-

@@ -1,4 +1,6 @@
-f = open("C:\input.txt", 'r')
+import os
+
+f = print(os.path.dirname(__file__))
 
 index = 0
 
