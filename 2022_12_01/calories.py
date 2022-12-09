@@ -1,6 +1,6 @@
 import os
 
-f = open((os.path.dirname(__file__)+"\input.txt"), "r")
+f = open((os.path.dirname(__file__)+"\input"), "r")
 
 index = 0
 
