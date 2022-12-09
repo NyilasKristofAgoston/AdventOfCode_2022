@@ -1,6 +1,6 @@
 import os
 
-f = print(os.path.dirname(__file__))
+f = open(os.path.dirname(__file__))
 
 index = 0
 
