@@ -39,9 +39,9 @@ for i in f:
 
     instruction = {
         # X - lose, Y - draw, Z - win
-        "X":0 + pointsForShape[loses_to[his]],
+        "X":0 + pointsForShape[wins_to[his]],
         "Y":3 + pointsForShape[draws_to[his]],
-        "Z":6 + pointsForShape[wins_to[his]],
+        "Z":6 + pointsForShape[loses_to[his]],
 
     }
 
