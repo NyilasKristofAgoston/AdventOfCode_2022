@@ -11,11 +11,15 @@ f = open((os.path.dirname(__file__)+"\input"), "r")
 
 def kozosEgyezes(inpLista1, inpLista2):
     resultLista = list(set([i for i in inpLista1 if i in inpLista2]))
+    return resultLista
+
+def priorityValue(inpLista):
+    
     returnOsszeg = 0
 
     # print(resultLista)
 
-    for i in resultLista:
+    for i in inpLista:
         if i.isupper():
             returnOsszeg += ord(i)-38
             # print(i, ord(i)-38)
@@ -26,7 +30,6 @@ def kozosEgyezes(inpLista1, inpLista2):
 
     return returnOsszeg
 
-
 outValue = 0
 
 for i in f:
@@ -34,5 +37,5 @@ for i in f:
     firstPart = i[:(len(i)) // 2]
     secondPart = i[(len(i)) // 2:]
     #vanEBenne(firstPart, secondPart)
-    outValue += kozosEgyezes(firstPart, secondPart)
+    outValue += priorityValue(kozosEgyezes(firstPart, secondPart))
 print(outValue)
