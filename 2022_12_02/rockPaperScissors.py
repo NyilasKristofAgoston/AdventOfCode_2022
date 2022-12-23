@@ -35,4 +35,6 @@ for i in f:
 
     counter += play(his, mine)
 
+
 print(counter)
+
